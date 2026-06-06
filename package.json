@@ -1,0 +1,38 @@
+{
+  "name": "sanhe-video-agent",
+  "version": "1.0.0",
+  "description": "A Codex + Remotion workflow for humanistic vertical menu videos.",
+  "repository": {},
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "dev": "remotion studio",
+    "lint": "eslint src && tsc",
+    "still": "bash scripts/render-stills.sh MenuCocktailVideo",
+    "render:saudade": "bash scripts/render-with-fallback.sh MenuCocktailVideo out/saudade-first-video.mp4 1620 30 592 1280",
+    "verify": "bash scripts/verify-video.sh out/saudade-first-video.mp4"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.473",
+    "@remotion/tailwind-v4": "4.0.473",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.473",
+    "tailwindcss": "4.0.0"
+  },
+  "devDependencies": {
+    "@remotion/eslint-config-flat": "4.0.473",
+    "@types/react": "19.2.7",
+    "@types/web": "0.0.166",
+    "eslint": "9.19.0",
+    "prettier": "3.8.1",
+    "typescript": "5.9.3"
+  },
+  "optionalDependencies": {
+    "@remotion/compositor-darwin-arm64": "^4.0.473",
+    "@rspack/binding-darwin-arm64": "^1.7.6"
+  },
+  "sideEffects": [
+    "*.css"
+  ]
+}

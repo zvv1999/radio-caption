@@ -1,0 +1,7 @@
+node_modules
+out
+.DS_Store
+*.log
+public/reference/*.mov
+public/reference/*.mp4
+!public/reference/.gitkeep
