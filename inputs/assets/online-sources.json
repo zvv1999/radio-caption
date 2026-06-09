@@ -1,5 +1,66 @@
 {
   "version": 1,
   "provider": "pexels",
-  "assets": []
+  "assets": [
+    {
+      "id": "pexels-32699347-13940425",
+      "provider": "pexels",
+      "query": "cocktail bar warm",
+      "tags": [
+        "pexels",
+        "online",
+        "cocktail",
+        "bar",
+        "warm"
+      ],
+      "localPath": "library/videos/pexels/cocktail-bar-warm-32699347-13940425.mp4",
+      "sourceUrl": "https://www.pexels.com/video/cozy-bar-setting-with-jars-of-dried-fruits-and-nuts-32699347/",
+      "photographer": "khezez  | خزاز",
+      "photographerUrl": "https://www.pexels.com/@khezez",
+      "width": 360,
+      "height": 640,
+      "duration": 10,
+      "licenseNote": "Pexels content; follow Pexels API attribution guidelines."
+    },
+    {
+      "id": "pexels-29532480-12712695",
+      "provider": "pexels",
+      "query": "cocktail bar warm",
+      "tags": [
+        "pexels",
+        "online",
+        "cocktail",
+        "bar",
+        "warm"
+      ],
+      "localPath": "library/videos/pexels/cocktail-bar-warm-29532480-12712695.mp4",
+      "sourceUrl": "https://www.pexels.com/video/cheers-in-a-cozy-indoor-setting-29532480/",
+      "photographer": "Clément Proust",
+      "photographerUrl": "https://www.pexels.com/@clement-proust-363898785",
+      "width": 2160,
+      "height": 3840,
+      "duration": 2,
+      "licenseNote": "Pexels content; follow Pexels API attribution guidelines."
+    },
+    {
+      "id": "pexels-32699352-13940405",
+      "provider": "pexels",
+      "query": "cocktail bar warm",
+      "tags": [
+        "pexels",
+        "online",
+        "cocktail",
+        "bar",
+        "warm"
+      ],
+      "localPath": "library/videos/pexels/cocktail-bar-warm-32699352-13940405.mp4",
+      "sourceUrl": "https://www.pexels.com/video/cozy-bar-scene-with-jars-of-dried-fruit-32699352/",
+      "photographer": "khezez  | خزاز",
+      "photographerUrl": "https://www.pexels.com/@khezez",
+      "width": 360,
+      "height": 640,
+      "duration": 10,
+      "licenseNote": "Pexels content; follow Pexels API attribution guidelines."
+    }
+  ]
 }
