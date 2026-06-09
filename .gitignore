@@ -5,3 +5,5 @@ out
 public/reference/*.mov
 public/reference/*.mp4
 !public/reference/.gitkeep
+public/library/videos/*
+!public/library/videos/.gitkeep

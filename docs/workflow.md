@@ -7,6 +7,7 @@ Put files here:
 - Menu PDFs: `inputs/menu`
 - Reference recordings: `inputs/reference`
 - Browser-readable Remotion assets: `public/reference`
+- Reusable background footage: `public/library/videos`
 
 Extract a PDF:
 
@@ -18,6 +19,12 @@ Check a reference video:
 
 ```bash
 /opt/homebrew/bin/ffprobe -v error -show_entries stream=codec_name,width,height,r_frame_rate,duration -of default=noprint_wrappers=1 "public/reference/original-reference.mp4"
+```
+
+Scan local video素材库:
+
+```bash
+npm run assets:scan
 ```
 
 ## 2. Build The Beat Sheet

@@ -20,6 +20,7 @@ export type CocktailVideoData = {
   width: number;
   height: number;
   referenceVideo: string;
+  backgroundVideos?: string[];
   playbackRate: number;
   title: {
     en: string;

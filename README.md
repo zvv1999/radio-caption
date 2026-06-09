@@ -30,6 +30,8 @@ PATH=/Users/cds-dn419/.cache/codex-runtimes/codex-primary-runtime/dependencies/n
 - `AGENTS.md`: the dedicated video-agent behavior and quality bar.
 - `src/data`: per-drink copy and timing data.
 - `inputs/briefs`: JSON briefs for one-command generation.
+- `inputs/assets`: generated manifests for local素材库.
+- `public/library/videos`: local background video素材库, ignored by Git.
 - `src/theme`: typography, color, easing, and shared style constants.
 - `src/compositions`: Remotion compositions.
 - `scripts`: PDF extraction, still rendering, export fallback, verification.
@@ -44,3 +46,13 @@ PATH=/Users/cds-dn419/.cache/codex-runtimes/codex-primary-runtime/dependencies/n
 4. Inspect the stills in `out/checks` and the verified MP4.
 
 Research notes from high-star Remotion and one-click video projects live in `docs/reference-projects.md`.
+
+## Local Video Asset Library
+
+Put footage in `public/library/videos`, then run:
+
+```bash
+npm run assets:scan
+```
+
+Briefs can choose clips by tags via `videoLibrary`. See `docs/asset-library.md`.

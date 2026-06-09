@@ -16,6 +16,14 @@ type CardProps = {
 
 const BackgroundVideo: React.FC<{ data: CocktailVideoData }> = ({ data }) => {
   const frame = useCurrentFrame();
+  const videos =
+    data.backgroundVideos && data.backgroundVideos.length > 0
+      ? data.backgroundVideos
+      : [data.referenceVideo];
+  const videoIndex = Math.floor(
+    (frame / data.durationInFrames) * videos.length,
+  );
+  const activeVideo = videos[Math.min(videoIndex, videos.length - 1)];
   const drift = interpolate(
     frame,
     [0, data.durationInFrames],
@@ -26,7 +34,7 @@ const BackgroundVideo: React.FC<{ data: CocktailVideoData }> = ({ data }) => {
   return (
     <>
       <Video
-        src={staticFile(data.referenceVideo)}
+        src={staticFile(activeVideo)}
         muted
         playbackRate={data.playbackRate}
         style={{

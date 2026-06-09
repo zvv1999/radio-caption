@@ -34,6 +34,7 @@ Avoid:
 1. Read source material:
    - PDF menu: extract text with `scripts/extract-pdf-text.sh`.
    - Reference video: inspect dimensions/duration with `ffprobe`; convert HEVC to H.264 if needed.
+   - Local video素材库: put clips in `public/library/videos` and run `npm run assets:scan`.
    - Existing style: compare against `docs/style-guide.md`.
 
 2. Build a scriptable brief:
@@ -45,6 +46,7 @@ Avoid:
 
 3. Implement in Remotion:
    - Prefer JSON briefs in `inputs/briefs` for repeat videos.
+   - Prefer `videoLibrary` tag selection over hardcoded background clips when multiple素材 are available.
    - Convert JSON to `src/data/generated.ts` with `scripts/generate-data-from-brief.mjs`.
    - Put content data in `src/data`.
    - Keep shared styling in `src/theme`.

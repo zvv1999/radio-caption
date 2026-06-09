@@ -6,6 +6,12 @@
   "width": 592,
   "height": 1280,
   "referenceVideo": "reference/original-reference.mp4",
+  "videoLibrary": {
+    "manifest": "inputs/assets/videos.json",
+    "tags": ["bar", "warm", "cocktail"],
+    "orientation": "vertical",
+    "limit": 2
+  },
   "playbackRate": 0.84,
   "title": {
     "en": "Saudade",

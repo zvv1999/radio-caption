@@ -8,6 +8,7 @@ export const generatedVideo: CocktailVideoData = {
   width: 592,
   height: 1280,
   referenceVideo: "reference/original-reference.mp4",
+  backgroundVideos: [],
   playbackRate: 0.84,
   title: {
     en: "Saudade",
