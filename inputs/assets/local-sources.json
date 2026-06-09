@@ -1,0 +1,266 @@
+{
+  "version": 1,
+  "sourceName": "片",
+  "generatedAt": "2026-06-09T14:45:05.283Z",
+  "dryRun": false,
+  "imported": [
+    {
+      "sourceFile": "4月4日 (2).mov",
+      "localPath": "library/videos/local/4月4日-2-aafbe9f5.mp4",
+      "outputPath": "public/library/videos/local/4月4日-2-aafbe9f5.mp4",
+      "tags": [
+        "local",
+        "bar",
+        "warm",
+        "cocktail",
+        "original",
+        "vertical",
+        "h264"
+      ],
+      "action": "remux",
+      "codec": "h264",
+      "width": 2160,
+      "height": 2880,
+      "duration": 9.933333,
+      "orientation": "vertical"
+    },
+    {
+      "sourceFile": "5月1日 (4).mp4",
+      "localPath": "library/videos/local/5月1日-4-2750aba6.mp4",
+      "outputPath": "public/library/videos/local/5月1日-4-2750aba6.mp4",
+      "tags": [
+        "local",
+        "bar",
+        "warm",
+        "cocktail",
+        "original",
+        "vertical",
+        "h264"
+      ],
+      "action": "remux",
+      "codec": "h264",
+      "width": 2160,
+      "height": 3840,
+      "duration": 12.933333,
+      "orientation": "vertical"
+    },
+    {
+      "sourceFile": "8月5日(1).mov",
+      "localPath": "library/videos/local/8月5日-1-2ef6e747.mp4",
+      "outputPath": "public/library/videos/local/8月5日-1-2ef6e747.mp4",
+      "tags": [
+        "local",
+        "bar",
+        "warm",
+        "cocktail",
+        "original",
+        "vertical",
+        "h264"
+      ],
+      "action": "remux",
+      "codec": "h264",
+      "width": 2160,
+      "height": 3840,
+      "duration": 11.666667,
+      "orientation": "vertical"
+    },
+    {
+      "sourceFile": "8月5日(2).mov",
+      "localPath": "library/videos/local/8月5日-2-5f730600.mp4",
+      "outputPath": "public/library/videos/local/8月5日-2-5f730600.mp4",
+      "tags": [
+        "local",
+        "bar",
+        "warm",
+        "cocktail",
+        "original",
+        "vertical",
+        "h264"
+      ],
+      "action": "remux",
+      "codec": "h264",
+      "width": 1440,
+      "height": 2560,
+      "duration": 11.666667,
+      "orientation": "vertical"
+    },
+    {
+      "sourceFile": "8月5日(3).mov",
+      "localPath": "library/videos/local/8月5日-3-a6f7e1d3.mp4",
+      "outputPath": "public/library/videos/local/8月5日-3-a6f7e1d3.mp4",
+      "tags": [
+        "local",
+        "bar",
+        "warm",
+        "cocktail",
+        "original",
+        "vertical",
+        "h264"
+      ],
+      "action": "remux",
+      "codec": "h264",
+      "width": 2160,
+      "height": 3840,
+      "duration": 11.666667,
+      "orientation": "vertical"
+    }
+  ],
+  "skipped": [
+    {
+      "sourceFile": "2月3日.mov",
+      "reason": "orientation is horizontal"
+    },
+    {
+      "sourceFile": "2月4日 (1).mov",
+      "reason": "orientation is horizontal"
+    },
+    {
+      "sourceFile": "2月4日 (2).mov",
+      "reason": "orientation is horizontal"
+    },
+    {
+      "sourceFile": "3月10日 (1).mov",
+      "reason": "orientation is horizontal"
+    },
+    {
+      "sourceFile": "3月10日(1).mov",
+      "reason": "orientation is horizontal"
+    },
+    {
+      "sourceFile": "3月10日.mov",
+      "reason": "orientation is horizontal"
+    },
+    {
+      "sourceFile": "3月24日(4).mov",
+      "reason": "orientation is horizontal"
+    },
+    {
+      "sourceFile": "3月25日(3).mov",
+      "reason": "orientation is horizontal"
+    },
+    {
+      "sourceFile": "3月31日 (1)(1).mov",
+      "reason": "orientation is horizontal"
+    },
+    {
+      "sourceFile": "3月31日 (1).mov",
+      "reason": "orientation is horizontal"
+    },
+    {
+      "sourceFile": "3月31日 (2).mov",
+      "reason": "orientation is horizontal"
+    },
+    {
+      "sourceFile": "3月31日 (3)(1).mov",
+      "reason": "orientation is horizontal"
+    },
+    {
+      "sourceFile": "3月31日 (3).mov",
+      "reason": "orientation is horizontal"
+    },
+    {
+      "sourceFile": "3月31日 (6).mov",
+      "reason": "orientation is horizontal"
+    },
+    {
+      "sourceFile": "3月9日 (1).mov",
+      "reason": "orientation is horizontal"
+    },
+    {
+      "sourceFile": "3月9日 (2).mov",
+      "reason": "orientation is horizontal"
+    },
+    {
+      "sourceFile": "3月9日.mov",
+      "reason": "orientation is horizontal"
+    },
+    {
+      "sourceFile": "4月13日 (1).mov",
+      "reason": "orientation is horizontal"
+    },
+    {
+      "sourceFile": "4月14日.mov",
+      "reason": "orientation is horizontal"
+    },
+    {
+      "sourceFile": "4月17日.mov",
+      "reason": "orientation is horizontal"
+    },
+    {
+      "sourceFile": "4月27日(1).mp4",
+      "reason": "orientation is horizontal"
+    },
+    {
+      "sourceFile": "4月2日.mov",
+      "reason": "orientation is horizontal"
+    },
+    {
+      "sourceFile": "4月4日 (1)(1).mov",
+      "reason": "orientation is horizontal"
+    },
+    {
+      "sourceFile": "4月4日 (1).mov",
+      "reason": "orientation is horizontal"
+    },
+    {
+      "sourceFile": "4月4日.mov",
+      "reason": "orientation is horizontal"
+    },
+    {
+      "sourceFile": "5月1日 (1).mp4",
+      "reason": "orientation is horizontal"
+    },
+    {
+      "sourceFile": "5月2日 (2).mp4",
+      "reason": "orientation is horizontal"
+    },
+    {
+      "sourceFile": "5月2日 (3).mp4",
+      "reason": "orientation is horizontal"
+    },
+    {
+      "sourceFile": "5月2日 (4).mp4",
+      "reason": "orientation is horizontal"
+    },
+    {
+      "sourceFile": "5月4日.mp4",
+      "reason": "orientation is horizontal"
+    },
+    {
+      "sourceFile": "5月6日 (1)(1).mp4",
+      "reason": "orientation is horizontal"
+    },
+    {
+      "sourceFile": "5月6日 (1).mp4",
+      "reason": "orientation is horizontal"
+    },
+    {
+      "sourceFile": "5月7日.mp4",
+      "reason": "orientation is horizontal"
+    },
+    {
+      "sourceFile": "6月13日.mov",
+      "reason": "orientation is horizontal"
+    },
+    {
+      "sourceFile": "8月11日.mov",
+      "reason": "orientation is horizontal"
+    },
+    {
+      "sourceFile": "8月5日.mov",
+      "reason": "orientation is horizontal"
+    },
+    {
+      "sourceFile": "无.mov",
+      "reason": "orientation is horizontal"
+    },
+    {
+      "sourceFile": "桃花源.mov",
+      "reason": "orientation is horizontal"
+    },
+    {
+      "sourceFile": "西藏.mov",
+      "reason": "orientation is horizontal"
+    }
+  ]
+}

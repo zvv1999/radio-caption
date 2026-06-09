@@ -1,7 +1,127 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-09T14:35:36.529Z",
+  "generatedAt": "2026-06-09T14:45:06.718Z",
   "assets": [
+    {
+      "id": "4月4日-2-aafbe9f5",
+      "path": "library/videos/local/4月4日-2-aafbe9f5.mp4",
+      "filename": "4月4日-2-aafbe9f5.mp4",
+      "tags": [
+        "public",
+        "library",
+        "videos",
+        "local",
+        "4月4日",
+        "2",
+        "aafbe9f5",
+        "bar",
+        "warm",
+        "cocktail",
+        "original",
+        "vertical",
+        "h264"
+      ],
+      "width": 2160,
+      "height": 2880,
+      "duration": 9.933333,
+      "orientation": "vertical"
+    },
+    {
+      "id": "5月1日-4-2750aba6",
+      "path": "library/videos/local/5月1日-4-2750aba6.mp4",
+      "filename": "5月1日-4-2750aba6.mp4",
+      "tags": [
+        "public",
+        "library",
+        "videos",
+        "local",
+        "5月1日",
+        "4",
+        "2750aba6",
+        "bar",
+        "warm",
+        "cocktail",
+        "original",
+        "vertical",
+        "h264"
+      ],
+      "width": 2160,
+      "height": 3840,
+      "duration": 12.933333,
+      "orientation": "vertical"
+    },
+    {
+      "id": "8月5日-1-2ef6e747",
+      "path": "library/videos/local/8月5日-1-2ef6e747.mp4",
+      "filename": "8月5日-1-2ef6e747.mp4",
+      "tags": [
+        "public",
+        "library",
+        "videos",
+        "local",
+        "8月5日",
+        "1",
+        "2ef6e747",
+        "bar",
+        "warm",
+        "cocktail",
+        "original",
+        "vertical",
+        "h264"
+      ],
+      "width": 2160,
+      "height": 3840,
+      "duration": 11.666667,
+      "orientation": "vertical"
+    },
+    {
+      "id": "8月5日-2-5f730600",
+      "path": "library/videos/local/8月5日-2-5f730600.mp4",
+      "filename": "8月5日-2-5f730600.mp4",
+      "tags": [
+        "public",
+        "library",
+        "videos",
+        "local",
+        "8月5日",
+        "2",
+        "5f730600",
+        "bar",
+        "warm",
+        "cocktail",
+        "original",
+        "vertical",
+        "h264"
+      ],
+      "width": 1440,
+      "height": 2560,
+      "duration": 11.666667,
+      "orientation": "vertical"
+    },
+    {
+      "id": "8月5日-3-a6f7e1d3",
+      "path": "library/videos/local/8月5日-3-a6f7e1d3.mp4",
+      "filename": "8月5日-3-a6f7e1d3.mp4",
+      "tags": [
+        "public",
+        "library",
+        "videos",
+        "local",
+        "8月5日",
+        "3",
+        "a6f7e1d3",
+        "bar",
+        "warm",
+        "cocktail",
+        "original",
+        "vertical",
+        "h264"
+      ],
+      "width": 2160,
+      "height": 3840,
+      "duration": 11.666667,
+      "orientation": "vertical"
+    },
     {
       "id": "cocktail-bar-warm-29532480-12712695",
       "path": "library/videos/pexels/cocktail-bar-warm-29532480-12712695.mp4",
@@ -15,12 +135,15 @@
         "bar",
         "warm",
         "29532480",
-        "12712695"
+        "12712695",
+        "online"
       ],
       "width": 2160,
       "height": 3840,
       "duration": 2.168833,
-      "orientation": "vertical"
+      "orientation": "vertical",
+      "sourceUrl": "https://www.pexels.com/video/cheers-in-a-cozy-indoor-setting-29532480/",
+      "provider": "pexels"
     },
     {
       "id": "cocktail-bar-warm-32699347-13940425",
@@ -35,12 +158,15 @@
         "bar",
         "warm",
         "32699347",
-        "13940425"
+        "13940425",
+        "online"
       ],
       "width": 360,
       "height": 640,
       "duration": 10.466667,
-      "orientation": "vertical"
+      "orientation": "vertical",
+      "sourceUrl": "https://www.pexels.com/video/cozy-bar-setting-with-jars-of-dried-fruits-and-nuts-32699347/",
+      "provider": "pexels"
     },
     {
       "id": "cocktail-bar-warm-32699352-13940405",
@@ -55,12 +181,15 @@
         "bar",
         "warm",
         "32699352",
-        "13940405"
+        "13940405",
+        "online"
       ],
       "width": 360,
       "height": 640,
       "duration": 10.466667,
-      "orientation": "vertical"
+      "orientation": "vertical",
+      "sourceUrl": "https://www.pexels.com/video/cozy-bar-scene-with-jars-of-dried-fruit-32699352/",
+      "provider": "pexels"
     }
   ]
 }

@@ -58,6 +58,38 @@ Or select from the manifest:
 
 If no asset matches, the generator falls back to `referenceVideo`.
 
+## Import From An External Local Folder
+
+For a personal素材库 outside this repo, import proxy MP4 files first:
+
+```bash
+npm run assets:import-local -- --source "/path/to/your/videos" --orientation vertical --limit 5 --tags local,bar,warm,cocktail,original
+npm run assets:scan
+```
+
+The import writes browser-friendly videos into:
+
+```text
+public/library/videos/local/
+```
+
+It also records source filenames, tags, and conversion details in:
+
+```text
+inputs/assets/local-sources.json
+```
+
+Useful options:
+
+- `--orientation vertical|horizontal|all`
+- `--limit 5`
+- `--tags local,bar,warm,cocktail`
+- `--dry-run`
+- `--overwrite`
+- `--preserve-source-path`
+
+H.264 clips are remuxed into MP4. HEVC and ProRes clips are transcoded to H.264 yuv420p for Remotion/browser compatibility.
+
 ## Naming Tips
 
 File and folder names become searchable tags. Good names:

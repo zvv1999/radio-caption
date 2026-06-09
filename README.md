@@ -55,6 +55,13 @@ Put footage in `public/library/videos`, then run:
 npm run assets:scan
 ```
 
+To connect an external folder such as your local素材库:
+
+```bash
+npm run assets:import-local -- --source "/path/to/your/videos" --orientation vertical --limit 5 --tags local,bar,warm,cocktail,original
+npm run assets:scan
+```
+
 Briefs can choose clips by tags via `videoLibrary`. See `docs/asset-library.md`.
 
 ## Online Stock Videos

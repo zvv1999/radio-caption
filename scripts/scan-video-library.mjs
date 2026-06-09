@@ -5,6 +5,10 @@ import { execFileSync } from "node:child_process";
 
 const libraryDir = process.argv[2] || "public/library/videos";
 const output = process.argv[3] || "inputs/assets/videos.json";
+const sidecarPaths = [
+  "inputs/assets/local-sources.json",
+  "inputs/assets/online-sources.json",
+];
 const extensions = new Set([".mp4", ".mov", ".m4v", ".webm"]);
 
 const ffprobe =
@@ -16,22 +20,30 @@ const ffprobe =
 const files = walk(libraryDir).filter((file) =>
   extensions.has(path.extname(file).toLowerCase()),
 );
+const sidecarMetadata = loadSidecarMetadata(sidecarPaths);
 
 const assets = files.map((file) => {
   const probe = probeVideo(file);
   const width = Number(probe.width || 0);
   const height = Number(probe.height || 0);
   const relativePath = toPublicPath(file);
+  const sidecar = sidecarMetadata.get(relativePath);
+  const tags = Array.from(
+    new Set([...inferTags(file), ...(sidecar?.tags || [])].filter(Boolean)),
+  );
 
   return {
     id: slug(path.basename(file, path.extname(file))),
     path: relativePath,
     filename: path.basename(file),
-    tags: inferTags(file),
+    tags,
     width,
     height,
     duration: Number(probe.duration || 0),
     orientation: height >= width ? "vertical" : "horizontal",
+    sourcePath: sidecar?.sourcePath,
+    sourceUrl: sidecar?.sourceUrl,
+    provider: sidecar?.provider,
   };
 });
 
@@ -95,6 +107,54 @@ function inferTags(file) {
     .split(/[^a-z0-9\u4e00-\u9fa5]+/)
     .filter(Boolean);
   return Array.from(new Set(parts));
+}
+
+function loadSidecarMetadata(paths) {
+  const metadata = new Map();
+
+  for (const manifestPath of paths) {
+    if (!fs.existsSync(manifestPath)) {
+      continue;
+    }
+
+    const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
+    const records = Array.isArray(manifest.assets)
+      ? manifest.assets
+      : Array.isArray(manifest.imported)
+        ? manifest.imported
+        : [];
+
+    for (const record of records) {
+      const localPath = normalizePublicPath(record.localPath || record.path);
+      if (!localPath) {
+        continue;
+      }
+
+      const existing = metadata.get(localPath) || {};
+      metadata.set(localPath, {
+        ...existing,
+        ...record,
+        tags: Array.from(
+          new Set(
+            [...(existing.tags || []), ...(record.tags || [])].filter(Boolean),
+          ),
+        ),
+      });
+    }
+  }
+
+  return metadata;
+}
+
+function normalizePublicPath(value) {
+  if (!value) {
+    return undefined;
+  }
+
+  return String(value)
+    .replace(/^public\//, "")
+    .split(path.sep)
+    .join("/");
 }
 
 function slug(value) {
