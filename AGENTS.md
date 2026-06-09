@@ -35,6 +35,7 @@ Avoid:
    - PDF menu: extract text with `scripts/extract-pdf-text.sh`.
    - Reference video: inspect dimensions/duration with `ffprobe`; convert HEVC to H.264 if needed.
    - Local video素材库: put clips in `public/library/videos` and run `npm run assets:scan`.
+   - Local music素材库: import tracks with `npm run assets:import-audio -- --source "<folder>"`, then run `npm run assets:scan-audio`.
    - Online素材库: if `PEXELS_API_KEY` is available, use `npm run assets:pexels -- --query "<keywords>"`.
    - Existing style: compare against `docs/style-guide.md`.
 

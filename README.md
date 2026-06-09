@@ -32,6 +32,7 @@ PATH=/Users/cds-dn419/.cache/codex-runtimes/codex-primary-runtime/dependencies/n
 - `inputs/briefs`: JSON briefs for one-command generation.
 - `inputs/assets`: generated manifests for local素材库.
 - `public/library/videos`: local background video素材库, ignored by Git.
+- `public/library/audio`: local music素材库, ignored by Git.
 - `src/theme`: typography, color, easing, and shared style constants.
 - `src/compositions`: Remotion compositions.
 - `scripts`: PDF extraction, still rendering, export fallback, verification.
@@ -63,6 +64,17 @@ npm run assets:scan
 ```
 
 Briefs can choose clips by tags via `videoLibrary`. See `docs/asset-library.md`.
+
+## Local Music Asset Library
+
+To connect an external music folder:
+
+```bash
+npm run assets:import-audio -- --source "/path/to/your/music" --tags local,music,human,warm
+npm run assets:scan-audio
+```
+
+The audio files are cached locally and ignored by Git. The searchable manifest is `inputs/assets/audio.json`. See `docs/audio-library.md`.
 
 ## Online Stock Videos
 

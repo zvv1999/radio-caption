@@ -11,6 +11,8 @@
     "generate": "node scripts/generate-data-from-brief.mjs inputs/briefs/saudade.json",
     "assets:scan": "node scripts/scan-video-library.mjs public/library/videos inputs/assets/videos.json",
     "assets:import-local": "node scripts/import-local-library.mjs",
+    "assets:scan-audio": "node scripts/scan-audio-library.mjs public/library/audio inputs/assets/audio.json",
+    "assets:import-audio": "node scripts/import-local-audio-library.mjs",
     "assets:pexels": "node scripts/fetch-pexels-videos.mjs",
     "still": "bash scripts/render-stills.sh MenuCocktailVideo",
     "still:generated": "bash scripts/render-stills.sh GeneratedCocktailVideo",

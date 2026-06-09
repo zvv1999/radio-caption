@@ -7,3 +7,5 @@ public/reference/*.mp4
 !public/reference/.gitkeep
 public/library/videos/*
 !public/library/videos/.gitkeep
+public/library/audio/*
+!public/library/audio/.gitkeep
