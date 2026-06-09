@@ -13,6 +13,12 @@ npm run render:saudade
 npm run verify
 ```
 
+One-command generated video flow:
+
+```bash
+npm run make
+```
+
 Use the bundled Node runtime if the default system Node is too old:
 
 ```bash
@@ -23,6 +29,7 @@ PATH=/Users/cds-dn419/.cache/codex-runtimes/codex-primary-runtime/dependencies/n
 
 - `AGENTS.md`: the dedicated video-agent behavior and quality bar.
 - `src/data`: per-drink copy and timing data.
+- `inputs/briefs`: JSON briefs for one-command generation.
 - `src/theme`: typography, color, easing, and shared style constants.
 - `src/compositions`: Remotion compositions.
 - `scripts`: PDF extraction, still rendering, export fallback, verification.
@@ -31,7 +38,9 @@ PATH=/Users/cds-dn419/.cache/codex-runtimes/codex-primary-runtime/dependencies/n
 
 ## Adding The Next Drink
 
-1. Extract or paste the next menu copy into `src/data`.
-2. Duplicate `src/data/saudade.ts` and replace title, beats, ingredients, and price.
-3. Register a new composition in `src/Root.tsx`, or reuse `MenuCocktailVideo` with swapped data.
-4. Render three stills, inspect them, then export the MP4.
+1. Duplicate `inputs/briefs/saudade.json`.
+2. Replace title, beats, ingredients, duration, and price.
+3. Run `bash scripts/make-video.sh inputs/briefs/your-drink.json out/your-drink.mp4`.
+4. Inspect the stills in `out/checks` and the verified MP4.
+
+Research notes from high-star Remotion and one-click video projects live in `docs/reference-projects.md`.

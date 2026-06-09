@@ -8,8 +8,12 @@
   "scripts": {
     "dev": "remotion studio",
     "lint": "eslint src && tsc",
+    "generate": "node scripts/generate-data-from-brief.mjs inputs/briefs/saudade.json",
     "still": "bash scripts/render-stills.sh MenuCocktailVideo",
+    "still:generated": "bash scripts/render-stills.sh GeneratedCocktailVideo",
+    "make": "bash scripts/make-video.sh inputs/briefs/saudade.json out/generated-video.mp4",
     "render:saudade": "bash scripts/render-with-fallback.sh MenuCocktailVideo out/saudade-first-video.mp4 1620 30 592 1280",
+    "render:generated": "bash scripts/render-with-fallback.sh GeneratedCocktailVideo out/generated-video.mp4 1620 30 592 1280",
     "verify": "bash scripts/verify-video.sh out/saudade-first-video.mp4"
   },
   "dependencies": {

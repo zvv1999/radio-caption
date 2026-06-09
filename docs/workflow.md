@@ -36,6 +36,7 @@ Keep each caption beat short enough to read in 2.5-4 seconds.
 
 Edit or duplicate:
 
+- `inputs/briefs/saudade.json`
 - `src/data/saudade.ts`
 - `src/compositions/MenuCocktailVideo.tsx`
 - `src/Root.tsx`
@@ -53,10 +54,23 @@ bash scripts/render-stills.sh MenuCocktailVideo
 
 Open the generated PNG files in `out/checks`.
 
+For JSON-driven generated videos:
+
+```bash
+node scripts/generate-data-from-brief.mjs inputs/briefs/saudade.json
+bash scripts/render-stills.sh GeneratedCocktailVideo
+```
+
 ## 5. Export
 
 ```bash
 bash scripts/render-with-fallback.sh MenuCocktailVideo out/final.mp4 1620 30 592 1280
+```
+
+Or run the one-command pipeline:
+
+```bash
+bash scripts/make-video.sh inputs/briefs/saudade.json out/generated-video.mp4
 ```
 
 If Remotion's bundled ffmpeg hangs after rendering all frames, use the newest matching `react-motion-render*` directory and system ffmpeg:

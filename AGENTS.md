@@ -44,6 +44,8 @@ Avoid:
    - Desired duration.
 
 3. Implement in Remotion:
+   - Prefer JSON briefs in `inputs/briefs` for repeat videos.
+   - Convert JSON to `src/data/generated.ts` with `scripts/generate-data-from-brief.mjs`.
    - Put content data in `src/data`.
    - Keep shared styling in `src/theme`.
    - Keep timing helpers in `src/lib`.
@@ -54,6 +56,7 @@ Avoid:
    - Open stills and adjust before full export.
 
 5. Export:
+   - For a one-command path, run `scripts/make-video.sh <brief.json> <output.mp4>`.
    - Use `scripts/render-with-fallback.sh`.
    - This project assumes Remotion's bundled ffmpeg may hang on this Mac.
    - If it hangs after all frames render, the script or agent should use system ffmpeg from the frame sequence.
