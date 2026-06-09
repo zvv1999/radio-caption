@@ -56,3 +56,14 @@ npm run assets:scan
 ```
 
 Briefs can choose clips by tags via `videoLibrary`. See `docs/asset-library.md`.
+
+## Online Stock Videos
+
+Pexels can be used as an online素材 source:
+
+```bash
+export PEXELS_API_KEY="..."
+npm run assets:pexels -- --query "cocktail bar warm" --count 3 --orientation portrait --tags bar,warm,cocktail
+```
+
+Downloaded videos are cached into the local素材库 and ignored by Git. See `docs/online-assets.md`.

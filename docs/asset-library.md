@@ -2,6 +2,8 @@
 
 The project supports a local video素材库 for reusable background footage.
 
+Online providers such as Pexels download into this same local library. See `docs/online-assets.md`.
+
 ## Folder
 
 Put local videos here:

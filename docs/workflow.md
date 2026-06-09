@@ -27,6 +27,13 @@ Scan local video素材库:
 npm run assets:scan
 ```
 
+Fetch online stock素材 from Pexels:
+
+```bash
+export PEXELS_API_KEY="..."
+npm run assets:pexels -- --query "cocktail bar warm" --count 3 --orientation portrait --tags bar,warm,cocktail
+```
+
 ## 2. Build The Beat Sheet
 
 For each drink, make:

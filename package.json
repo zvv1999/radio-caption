@@ -10,6 +10,7 @@
     "lint": "eslint src && tsc",
     "generate": "node scripts/generate-data-from-brief.mjs inputs/briefs/saudade.json",
     "assets:scan": "node scripts/scan-video-library.mjs public/library/videos inputs/assets/videos.json",
+    "assets:pexels": "node scripts/fetch-pexels-videos.mjs",
     "still": "bash scripts/render-stills.sh MenuCocktailVideo",
     "still:generated": "bash scripts/render-stills.sh GeneratedCocktailVideo",
     "make": "bash scripts/make-video.sh inputs/briefs/saudade.json out/generated-video.mp4",
